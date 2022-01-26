@@ -60,8 +60,6 @@ $EndComp
 Wire Wire Line
 	6550 2300 6550 3000
 Wire Wire Line
-	6300 2850 6300 2300
-Wire Wire Line
 	6300 2300 6550 2300
 Connection ~ 6550 2300
 $Comp
@@ -404,7 +402,7 @@ Text Notes 3500 5450 0    50   ~ 0
 Carrier Adjust\n(DSBSC <-> AM)
 Text Notes 3800 2000 0    50   ~ 0
 Modulation\nSignal
-Text Notes 4600 2000 0    50   ~ 0
+Text Notes 4650 2000 0    50   ~ 0
 Carrier\nInput
 $Comp
 L Xenir:Resistor R?
@@ -6665,4 +6663,69 @@ B6 C0 AE DC 3B C9 1B FD 38 CB 19 73 A4 F2 3D C8 FC 40 20 10 08 04 02 81 40 20 70
 84 D4 19 F5 60 18 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 61F59F91
+P 7400 2750
+F 0 "Q?" H 7600 2825 50  0000 L CNN
+F 1 "2N3904" H 7600 2750 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7600 2675 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7400 2750 50  0001 L CNN
+	1    7400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Xenir:Resistor R?
+U 1 1 61F5AEFB
+P 7500 3350
+F 0 "R?" H 7500 3425 28  0000 C CNN
+F 1 "1k" H 7500 3275 28  0000 C CNN
+F 2 "" H 7500 3250 50  0001 C CNN
+F 3 "" H 7500 3250 50  0001 C CNN
+	1    7500 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 2300 7500 2300
+Wire Wire Line
+	7500 2300 7500 2550
+Connection ~ 6750 2300
+$Comp
+L power:GND #PWR?
+U 1 1 61F5CFC9
+P 7500 3550
+F 0 "#PWR?" H 7500 3300 50  0001 C CNN
+F 1 "GND" H 7500 3400 50  0000 C CNN
+F 2 "" H 7500 3550 50  0001 C CNN
+F 3 "" H 7500 3550 50  0001 C CNN
+	1    7500 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2300 6300 2750
+$Comp
+L Xenir:Capacitor C?
+U 1 1 61F5DC62
+P 7050 2750
+F 0 "C?" H 7050 2875 28  0000 C CNN
+F 1 ".1uF" H 7050 2625 28  0000 C CNN
+F 2 "" H 7050 2600 50  0001 C CNN
+F 3 "" H 7050 2600 50  0001 C CNN
+	1    7050 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 2750 6300 2750
+Connection ~ 6300 2750
+Wire Wire Line
+	6300 2750 6300 2850
+Wire Wire Line
+	7500 2950 7500 3050
+Wire Wire Line
+	7500 3050 7850 3050
+Connection ~ 7500 3050
+Wire Wire Line
+	7500 3050 7500 3150
+Text Notes 7900 3150 0    50   ~ 0
+Output\nSignal
 $EndSCHEMATC
