@@ -1,0 +1,83 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Xenir:Resistor R?
+U 1 1 61F21B4D
+P 4550 4100
+F 0 "R?" H 4550 4175 28  0000 C CNN
+F 1 "1k" H 4550 4025 28  0000 C CNN
+F 2 "" H 4550 4000 50  0001 C CNN
+F 3 "" H 4550 4000 50  0001 C CNN
+	1    4550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4250 4350 4100
+$Comp
+L power:+12V #PWR?
+U 1 1 61F22BB7
+P 6550 2300
+F 0 "#PWR?" H 6550 2150 50  0001 C CNN
+F 1 "+12V" H 6550 2440 50  0000 C CNN
+F 2 "" H 6550 2300 50  0001 C CNN
+F 3 "" H 6550 2300 50  0001 C CNN
+	1    6550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Xenir:Resistor R?
+U 1 1 61F23577
+P 6300 3050
+F 0 "R?" H 6300 3125 28  0000 C CNN
+F 1 "3.3k" H 6300 2975 28  0000 C CNN
+F 2 "" H 6300 2950 50  0001 C CNN
+F 3 "" H 6300 2950 50  0001 C CNN
+	1    6300 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Xenir:Resistor R?
+U 1 1 61F2429C
+P 6550 3200
+F 0 "R?" H 6550 3275 28  0000 C CNN
+F 1 "3.3k" H 6550 3125 28  0000 C CNN
+F 2 "" H 6550 3100 50  0001 C CNN
+F 3 "" H 6550 3100 50  0001 C CNN
+	1    6550 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 2300 6550 3000
+Wire Wire Line
+	6300 2850 6300 2300
+Wire Wire Line
+	6300 2300 6550 2300
+Connection ~ 6550 2300
+$Comp
+L Xenir:Resistor R?
+U 1 1 61F27C75
+P 5500 2300
+F 0 "R?" H 5500 2375 28  0000 C CNN
+F 1 "1k" H 5500 2225 28  0000 C CNN
+F 2 "" H 5500 2200 50  0001 C CNN
+F 3 "" H 5500 2200 50  0001 C CNN
+	1    5500 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 2300 5700 2300
+Connection ~ 6300 2300
+$EndSCHEMATC
