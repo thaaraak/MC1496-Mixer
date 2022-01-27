@@ -321,7 +321,7 @@ L Xenir:Cap_Polarized C3
 U 1 1 61F4A2AE
 P 3850 3750
 F 0 "C3" H 3850 3525 28  0000 C CNN
-F 1 "Cap_Polarized" H 3850 3800 28  0000 C CNN
+F 1 "470uF" H 3850 3800 28  0000 C CNN
 F 2 "" H 3850 3800 50  0001 C CNN
 F 3 "" H 3850 3800 50  0001 C CNN
 	1    3850 3750
@@ -6719,4 +6719,6 @@ Text Notes 7650 5950 0    50   ~ 0
 Page 8 - https://www.onsemi.com/pdf/datasheet/mc1496-d.pdf
 Wire Wire Line
 	5800 2350 6700 2350
+Text Notes 3700 4650 2    50   ~ 0
+Carrier\nAdjust
 $EndSCHEMATC
