@@ -401,9 +401,9 @@ Wire Wire Line
 Text Notes 2450 3650 1    50   ~ 0
 Resistor Divider Biasing
 Text Notes 3300 1600 0    50   ~ 0
-Modulation\nSignal
+Modulation\nSignal\n300mV p-p
 Text Notes 4150 1600 0    50   ~ 0
-Carrier\nInput
+Carrier\nInput\n300mV p-p
 $Comp
 L Xenir:Resistor R12
 U 1 1 61F55AD7
