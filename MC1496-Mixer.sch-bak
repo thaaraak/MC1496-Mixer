@@ -6703,19 +6703,6 @@ F 3 "" H 7000 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 1900 5800 2350
-$Comp
-L Xenir:Capacitor C5
-U 1 1 61F5DC62
-P 6550 2350
-F 0 "C5" H 6550 2475 28  0000 C CNN
-F 1 ".1uF" H 6550 2225 28  0000 C CNN
-F 2 "" H 6550 2200 50  0001 C CNN
-F 3 "" H 6550 2200 50  0001 C CNN
-	1    6550 2350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6400 2350 5800 2350
 Connection ~ 5800 2350
 Wire Wire Line
 	5800 2350 5800 2450
@@ -6730,4 +6717,6 @@ Text Notes 7400 2750 0    50   ~ 0
 Output\nSignal
 Text Notes 7650 5950 0    50   ~ 0
 Page 8 - https://www.onsemi.com/pdf/datasheet/mc1496-d.pdf
+Wire Wire Line
+	5800 2350 6700 2350
 $EndSCHEMATC
