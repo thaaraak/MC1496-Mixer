@@ -6708,8 +6708,6 @@ Page 8 - https://www.onsemi.com/pdf/datasheet/mc1496-d.pdf
 Text Notes 3700 4650 2    50   ~ 0
 Carrier\nAdjust
 Wire Wire Line
-	6050 2100 6050 1900
-Wire Wire Line
 	5800 2450 5800 1900
 Wire Wire Line
 	6050 2550 6050 3000
@@ -6721,4 +6719,6 @@ Connection ~ 6250 1900
 Wire Wire Line
 	5800 2850 6400 2850
 Connection ~ 5800 2850
+Wire Wire Line
+	6050 1900 6050 2150
 $EndSCHEMATC
